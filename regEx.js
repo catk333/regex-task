@@ -3,19 +3,17 @@ var fs = require('fs');
 
 fs.readFile('DataForRegExTask','utf8',function (err,data){
 
-
 let stringOfData = data.toString();
 
+let myRegEx=(/@softwire.com/g);
 
-let splitOnSpaces = stringOfData.split(" ");
-  
-let softWireArray = splitOnSpaces.filter(item => item.includes("@softwire.com"));
+const softWireArray = stringOfData.match(myRegEx);
 
 console.log(softWireArray.length);
 
-
-
 })
+
+
 
 
 
