@@ -13,7 +13,11 @@ let softWireArray = splitOnSpaces.filter(item => item.includes("@softwire.com"))
 
 console.log(softWireArray.length);
 
+
+
 })
+
+
 
 
 
